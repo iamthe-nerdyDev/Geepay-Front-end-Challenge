@@ -2,8 +2,11 @@ import React from "react";
 import { Analytics, Graph, Navbar, Orders, Sidebar, TopPlatforms } from "./components";
 
 import "./assets/css/main.css";
+import { useStore } from "./utils/StoreProvider";
 
 const App: React.FC<{}> = () => {
+  const { theme } = useStore();
+
   return (
     <React.Fragment>
       <main>
@@ -44,7 +47,9 @@ const App: React.FC<{}> = () => {
                 </div>
 
                 <div className="col-12">
-                  <div className="py-4 footer-f">Copyright &copy; {new Date().getFullYear()}</div>
+                  <div className={`py-4 footer-f text-${theme}`}>
+                    Copyright &copy; {new Date().getFullYear()}
+                  </div>
                 </div>
               </div>
             </div>

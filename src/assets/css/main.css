@@ -792,3 +792,7 @@ body {
 .bg-dark {
   background-color: var(--bg-black);
 }
+
+.text-dark {
+  color: #fff;
+}
