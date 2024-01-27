@@ -453,6 +453,28 @@ body {
   font-weight: 500;
 }
 
+.platform-tittle span {
+  font-size: 0.9rem;
+}
+
+.platform-tittle select {
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  padding-right: 1.7rem;
+}
+
 .platforms {
   display: flex;
   flex-direction: column;
@@ -530,8 +552,6 @@ body {
 
 .footer-f {
   text-align: center;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 600;
 }

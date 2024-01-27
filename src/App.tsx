@@ -18,7 +18,7 @@ const App: React.FC<{}> = () => {
                 <div className="col-12">
                   <div className="row">
                     <div className="col-12 mb-4">
-                      <div className="row flex-xl-row-reverse">
+                      <div className="row g-4 flex-xl-row-reverse">
                         <div className="col-12 col-sm-9 col-md-11 col-lg-12 mx-auto col-xl-6">
                           <Analytics />
                         </div>
