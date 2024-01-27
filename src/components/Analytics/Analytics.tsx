@@ -13,7 +13,7 @@ import {
 const Analytics: React.FC<{}> = () => {
   return (
     <div className="row g-3">
-      <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+      <div className="col-12 col-md-6">
         <div className="card analytics">
           <div className="top d-flex align-items-center justify-content-between">
             <div className="icon">
@@ -34,7 +34,7 @@ const Analytics: React.FC<{}> = () => {
         </div>
       </div>
 
-      <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+      <div className="col-12 col-md-6">
         <div className="card analytics">
           <div className="top d-flex align-items-center justify-content-between">
             <div className="icon">
@@ -55,7 +55,7 @@ const Analytics: React.FC<{}> = () => {
         </div>
       </div>
 
-      <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+      <div className="col-12 col-md-6">
         <div className="card analytics">
           <div className="top d-flex align-items-center justify-content-between">
             <div className="icon">
@@ -76,7 +76,7 @@ const Analytics: React.FC<{}> = () => {
         </div>
       </div>
 
-      <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+      <div className="col-12 col-md-6">
         <div className="card analytics">
           <div className="top d-flex align-items-center justify-content-between">
             <div className="icon">

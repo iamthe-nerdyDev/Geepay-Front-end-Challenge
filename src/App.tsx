@@ -13,26 +13,38 @@ const App: React.FC<{}> = () => {
           <Navbar />
 
           <div className="body py-3">
-            <div className="col-12 mb-4">
-              <div className="d-flex gap flex-column flex-lg-row flex-lg-row-reverse">
-                <div className="col-12 col-lg-6">
-                  <Analytics />
+            <div className="container-fluid">
+              <div className="row g-4">
+                <div className="col-12">
+                  <div className="row">
+                    <div className="col-12 mb-4">
+                      <div className="row flex-xl-row-reverse">
+                        <div className="col-12 col-sm-9 col-md-11 col-lg-12 mx-auto col-xl-6">
+                          <Analytics />
+                        </div>
+
+                        <div className="col-12 col-sm-9 col-md-11 mx-auto col-lg-12 col-xl-6">
+                          <Graph />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="col-12 col-lg-6">
-                  <Graph />
-                </div>
-              </div>
-            </div>
+                <div className="col-12">
+                  <div className="row g-4">
+                    <div className="col-12 col-sm-9 col-md-11 mx-auto col-lg-7">
+                      <Orders />
+                    </div>
 
-            <div className="col-12">
-              <div className="d-flex gap flex-column flex-lg-row">
-                <div className="col-12 col-lg-6">
-                  <Orders />
+                    <div className="col-12 col-sm-9 col-md-11 mx-auto col-lg-5">
+                      <TopPlatforms />
+                    </div>
+                  </div>
                 </div>
 
-                <div className="col-12 col-lg-6">
-                  <TopPlatforms />
+                <div className="col-12">
+                  <div className="py-4 footer-f">Copyright &copy; {new Date().getFullYear()}</div>
                 </div>
               </div>
             </div>
