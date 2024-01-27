@@ -9,34 +9,30 @@ const App: React.FC<{}> = () => {
       <main>
         <Sidebar />
 
-        <div className="">
+        <div className="main-body">
           <Navbar />
 
-          <div className="row">
+          <div className="body">
             <div className="col-12">
-              <div className="row">
-                <div className="col-12">
-                  <div className="row flex-row-reverse">
-                    <div className="col-12 col-lg-7">
-                      <Analytics />
-                    </div>
-
-                    <div className="col-12 col-lg-5">
-                      <Graph />
-                    </div>
-                  </div>
+              <div className="d-flex flex-column flex-lg-row flex-lg-row-reverse">
+                <div className="col-12 col-lg-5">
+                  <Analytics />
                 </div>
 
-                <div className="col-12">
-                  <div className="row">
-                    <div className="col-12 col-lg-7">
-                      <Orders />
-                    </div>
+                <div className="col-12 col-lg-7">
+                  <Graph />
+                </div>
+              </div>
+            </div>
 
-                    <div className="col-12 col-lg-5">
-                      <TopPlatforms />
-                    </div>
-                  </div>
+            <div className="col-12">
+              <div className="d-flex flex-column flex-lg-row">
+                <div className="col-12 col-lg-7">
+                  <Orders />
+                </div>
+
+                <div className="col-12 col-lg-5">
+                  <TopPlatforms />
                 </div>
               </div>
             </div>

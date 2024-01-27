@@ -9,7 +9,9 @@ const Themes = ["dark", "light"] as const;
 
 type ContextProps = {
   theme: (typeof Themes)[number];
-  toggleTheme: () => void;
+  changeTheme: (theme: (typeof Themes)[number]) => void;
+  displaySidebar: boolean;
+  setDisaplaySidebar: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const OrderStatus = ["Paid", "Refund"] as const;
