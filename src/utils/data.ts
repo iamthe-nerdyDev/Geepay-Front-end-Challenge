@@ -1,4 +1,4 @@
-export const Orders: Order[] = [
+export const OrdersData: Order[] = [
   {
     picture: "/images/marcus.jpeg",
     name: "Marcus Bergson",
@@ -36,7 +36,7 @@ export const Orders: Order[] = [
   },
 ];
 
-export const TopPlatforms: Platform[] = [
+export const TopPlatformsData: Platform[] = [
   {
     name: "Book Bazaar",
     amount: 2500000,
