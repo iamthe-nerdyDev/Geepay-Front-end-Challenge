@@ -56,6 +56,7 @@ body {
   padding: 0.4rem 0.45rem;
   border-radius: 100px;
   gap: 0.55rem;
+  cursor: pointer;
   background-color: #fff;
 }
 
@@ -87,10 +88,12 @@ body {
   height: 3rem;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .navbar .nav-right .nav-date {
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .navbar .nav-right .nav-date p {
@@ -118,6 +121,11 @@ body {
   outline: none;
   border-radius: 100px;
   background-color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar .nav-right .nav-search input:focus {
+  border: 1px solid var(--bg-green);
 }
 
 .navbar .nav-right .nav-search input::placeholder {
@@ -461,7 +469,7 @@ body {
   border: 1px solid #ccc;
   outline: none;
   cursor: pointer;
-  padding: 0.5rem 0.7rem;
+  padding: 0.55rem 0.7rem;
   border-radius: 6px;
   font-size: 0.85rem;
   appearance: none;
@@ -472,7 +480,11 @@ body {
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 50%;
-  padding-right: 1.7rem;
+  padding-right: 1.3rem;
+}
+
+.platform-tittle select:focus {
+  border: 1px solid var(--bg-green);
 }
 
 .platforms {
