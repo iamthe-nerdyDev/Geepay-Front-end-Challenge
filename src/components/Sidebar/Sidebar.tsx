@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Box,
   Category,
+  Close,
   Discount,
   InfoCircle,
   Logo,
@@ -30,6 +31,10 @@ const Sidebar: React.FC<{}> = () => {
         className={`sidebar ${displaySidebar ? "d-flex" : "d-none"} d-lg-none`}
         onClick={handleOverlayClick}
       >
+        <div className="close" onClick={() => setDisaplaySidebar(false)}>
+          <Close />
+        </div>
+
         <div className="sidebar-box">
           <div className="brand d-flex align-items-center justify-content- py-5 ps-4">
             <Logo />

@@ -24,3 +24,5 @@ export { default as TrendingUpChart } from "./TrendingUpChart";
 export { default as TrendUp } from "./TrendUp";
 export { default as Users } from "./Users";
 export { default as Vector } from "./Vector";
+export { default as Close } from "./Close";
+export { default as Menu } from "./Menu";
