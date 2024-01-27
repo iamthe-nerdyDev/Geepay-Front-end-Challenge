@@ -9,10 +9,13 @@ import {
   TrendingUp,
   TrendingUpChart,
 } from "../../svgs";
+import { useStore } from "../../utils/StoreProvider";
 
 const Analytics: React.FC<{}> = () => {
+  const { theme } = useStore();
+
   return (
-    <div className="row g-3">
+    <div className={`row g-3 ana ${theme}`}>
       <div className="col-12 col-md-6">
         <div className="card analytics">
           <div className="top d-flex align-items-center justify-content-between">

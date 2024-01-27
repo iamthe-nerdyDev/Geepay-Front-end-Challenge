@@ -28,7 +28,7 @@ const Sidebar: React.FC<{}> = () => {
     <React.Fragment>
       {/** <= 991px sidebar */}
       <div
-        className={`sidebar ${displaySidebar ? "d-flex" : "d-none"} d-lg-none`}
+        className={`sidebar ${theme} ${displaySidebar ? "d-flex" : "d-none"} d-lg-none`}
         onClick={handleOverlayClick}
       >
         <div className="close" onClick={() => setDisaplaySidebar(false)}>
@@ -148,7 +148,9 @@ const Sidebar: React.FC<{}> = () => {
       </div>
 
       {/** >991px sidebar */}
-      <div className="sidebar-lg d-none d-lg-flex flex-column justify-content-between align-items-center">
+      <div
+        className={`sidebar-lg ${theme} d-none d-lg-flex flex-column justify-content-between align-items-center`}
+      >
         <div className="sidebar-top">
           <div className="brand mb-4">
             <a href="/" className="d-flex align-items-center justify-content-center">

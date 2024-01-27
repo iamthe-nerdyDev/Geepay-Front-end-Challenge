@@ -10,10 +10,13 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import faker from "faker";
+import { useStore } from "../../utils/StoreProvider";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const Graph: React.FC<{}> = () => {
+  const { theme } = useStore();
+
   const options = {
     elements: {
       bar: {
@@ -52,7 +55,7 @@ const Graph: React.FC<{}> = () => {
   };
 
   return (
-    <div className="card" style={{ height: "100%" }}>
+    <div className={`card ${theme}`} style={{ height: "100%" }}>
       <div className="px-1 d-flex flex-column justify-content-between" style={{ height: "100%" }}>
         <div className="platform-tittle d-flex align-items-center justify-content-between mb-4 pb-0 pt-1">
           <h2>Sales Trends</h2>

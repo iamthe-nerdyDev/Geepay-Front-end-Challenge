@@ -1,12 +1,15 @@
 import React from "react";
 import { OrdersData } from "../../utils/data";
 import { DocumentDownload } from "../../svgs";
+import { useStore } from "../../utils/StoreProvider";
 
 const Orders: React.FC<{}> = () => {
+  const { theme } = useStore();
+
   return (
     <div className="row">
       <div className="col-12">
-        <div className="card">
+        <div className={`card ${theme}`}>
           <div className="px-1">
             <div className="platform-tittle d-flex align-items-center justify-content-between mb-3 pb-0 pt-1">
               <h2>Last Orders</h2>

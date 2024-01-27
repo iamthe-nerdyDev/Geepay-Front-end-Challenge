@@ -1,11 +1,14 @@
 import React from "react";
 import { TopPlatformsData } from "../../utils/data";
+import { useStore } from "../../utils/StoreProvider";
 
 const TopPlatforms: React.FC<{}> = () => {
+  const { theme } = useStore();
+
   return (
     <div className="row">
       <div className="col-12">
-        <div className="card">
+        <div className={`card ${theme}`}>
           <div className="platform-tittle d-flex align-items-center justify-content-between mb-4 pb-2 pt-1">
             <h2>Top Platform</h2>
             <a href="#">See all</a>

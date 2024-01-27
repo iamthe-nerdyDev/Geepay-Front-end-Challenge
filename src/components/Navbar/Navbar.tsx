@@ -3,7 +3,7 @@ import { ArrowDown, Bell, Calendar, Logo, Logout, Menu, Search, Settings } from 
 import { useStore } from "../../utils/StoreProvider";
 
 const Navbar: React.FC<{}> = () => {
-  const { setDisaplaySidebar } = useStore();
+  const { setDisaplaySidebar, theme } = useStore();
 
   const [currentTime, setCurrentTime] = useState(new Date());
 
@@ -24,7 +24,7 @@ const Navbar: React.FC<{}> = () => {
   });
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${theme}`}>
       <div className="container-fluid">
         <div className="d-flex align-items-center justify-content-between">
           <a href="/" className="nav-brand d-flex align-items-center">

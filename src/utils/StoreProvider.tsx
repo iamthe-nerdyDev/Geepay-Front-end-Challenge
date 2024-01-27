@@ -17,13 +17,31 @@ const StoreProvider: React.FC<Props> = ({ children }) => {
 
   useEffect(() => {
     (function () {
-      const _theme = localStorage.getItem("theme-prefrence");
+      const _theme = localStorage.getItem("theme-prefrence")
+        ? localStorage.getItem("theme-prefrence") === "light"
+          ? "light"
+          : "dark"
+        : "light";
 
-      if (_theme) setTheme(_theme == "light" ? "light" : "dark");
+      const { body } = document;
+
+      if (_theme == "dark") body.classList.add("bg-dark");
+      else body.classList.remove("bg-dark");
+
+      setTheme(_theme);
     })();
   }, []);
 
-  const changeTheme = (_theme: (typeof Themes)[number]) => setTheme(_theme);
+  const changeTheme = (_theme: (typeof Themes)[number]) => {
+    setTheme(_theme);
+
+    const { body } = document;
+
+    if (_theme == "dark") body.classList.add("bg-dark");
+    else body.classList.remove("bg-dark");
+
+    localStorage.setItem("theme-prefrence", _theme);
+  };
 
   return (
     <Context.Provider value={{ theme, changeTheme, displaySidebar, setDisaplaySidebar }}>
