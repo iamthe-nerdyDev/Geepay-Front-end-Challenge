@@ -29,6 +29,10 @@ svg {
   margin: 0;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .navbar {
   position: sticky;
   position: -webkit-sticky;
@@ -341,4 +345,87 @@ svg {
   background-color: var(--bg-green);
   border-radius: 6px;
   color: #fff;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 14px;
+  border: 1px solid #edf2f7;
+  background: #fff;
+  padding: 1.45rem 1.35rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.analytics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.analytics h2 {
+  font-weight: 300;
+  color: #898989;
+}
+
+.analytics .top {
+  margin-bottom: 0.7rem;
+}
+
+.analytics .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.analytics .icon svg {
+  width: 2.1rem;
+  height: auto;
+}
+
+.analytics h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.analytics .footer .green {
+  color: #34caa5;
+  background-color: rgba(52, 202, 165, 0.12);
+}
+
+.analytics .footer .red {
+  color: #ed544e;
+  background-color: rgba(237, 84, 78, 0.12);
+}
+
+.analytics .footer .green,
+.analytics .footer .red {
+  font-size: 0.85rem;
+  gap: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 100px;
+}
+
+.analytics .footer .green svg,
+.analytics .footer .red svg {
+  width: 1rem;
+  height: auto;
+}
+
+.analytics .footer > span {
+  color: #606060;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.analytics .chart {
+  width: 10rem;
+  height: auto;
 }
